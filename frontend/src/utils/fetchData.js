@@ -1,8 +1,10 @@
+import React from "react";
+
 export const exerciseOptions = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-    'X-RapidAPI-Key': import.meta.env.REACT_APP_RAPID_API_KEY,
+    'X-RapidAPI-Key': import.meta.env.REACT_APP_RAPID_API_KEY
   },
 };
 
