@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/hero-banner.png')] text-white flex items-center justify-center min-h-screen bg-cover bg-center ">
+    <section className="bg-[url('/hero-banner.png')] text-white flex items-center justify-center h-[50rem] bg-cover bg-center ">
       <motion.div
-        className="mx-auto container text-center backdrop-blur-sm absolute bottom-52"
+        className="mx-auto container text-center backdrop-blur-sm "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}

@@ -56,7 +56,7 @@ const SearchExercises = ({ bodyPart , setExercises,setBodyPart}) => {
           </button>
         </div>
         <div className="w-full p-5">
-          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={bod}/>
+          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={bodyPart}/>
         </div>
       </div>
     </div>
