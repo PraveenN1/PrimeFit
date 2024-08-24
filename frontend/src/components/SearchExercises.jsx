@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
-const SearchExercises = ({ bodyPart , setExercises,setBodyPart}) => {
+const SearchExercises = ({ bodyPart, setExercises,setBodyPart}) => {
   const [search, setSearch] = useState("");
   const [bodyParts, setBodyParts] = useState([]);
   const [exercisesData,setExercisesData] = useState([]); 
@@ -41,7 +41,7 @@ const SearchExercises = ({ bodyPart , setExercises,setBodyPart}) => {
         <h2 className="font-bold text-center text-4xl md:text-5xl mb-12">
           Awesome Exercises You <br /> Should Know
         </h2>
-        <div className="mb-18 flex flex-1">
+        <div className="">
           <input
             type="text"
             value={search}
@@ -57,6 +57,7 @@ const SearchExercises = ({ bodyPart , setExercises,setBodyPart}) => {
           </button>
         </div>
         <div className="w-full p-5">
+          {console.log(bodyParts)};
           <HorizontalScrollbar data={exercisesData} bodyParts={bodyParts} setBodyPart={setBodyPart} bodyPart={bodyPart} />
         </div>
       </div>
